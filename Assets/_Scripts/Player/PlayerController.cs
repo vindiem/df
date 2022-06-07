@@ -34,7 +34,8 @@ public class PlayerController : MonoBehaviour
     // hp show()
     public Image healthBar;
     float maxHp = 100f;
-
+    
+    
     private void Start()
     {
         animator = GetComponent<Animator>();

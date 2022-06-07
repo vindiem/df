@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Skills : MonoBehaviour
 {
@@ -18,8 +19,21 @@ public class Skills : MonoBehaviour
     public ParticleSystem skillEffect;
     public ParticleSystem skill1Effect;
     
+    [Header("Mini Map & Full Map")]
+    public GameObject MiniMap;
+    public GameObject FullMap;
+
+
+    
     private void Start()
     {
+        // mini map instantiate & big map set active - false
+        if (MiniMap != null && FullMap != null)
+        {
+            MiniMap.gameObject.SetActive(true);
+            FullMap.gameObject.SetActive(false);
+        }
+        
         _playerController = GetComponent<PlayerController>();
         _gun = GameObject.FindGameObjectWithTag("Stick").GetComponent<Gun>();
     }
@@ -31,6 +45,21 @@ public class Skills : MonoBehaviour
             usingSkill = false;
         }
         
+        // mini map(full map) multiply & devide
+        if (MiniMap != null && FullMap != null)
+        {
+            if (Input.GetMouseButtonDown(2))
+            {
+                MiniMap.gameObject.SetActive(false);
+                FullMap.gameObject.SetActive(true);
+            }
+            else if (Input.GetMouseButtonUp(2))
+            {
+                MiniMap.gameObject.SetActive(true);
+                FullMap.gameObject.SetActive(false);
+            }
+        }
+
         // SKill
         if (Input.GetKeyDown(KeyCode.Q) && usingSkill == false)
         {
