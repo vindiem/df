@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Skills : MonoBehaviour
@@ -40,13 +38,21 @@ public class Skills : MonoBehaviour
         }
 
         // Skill 1
-        if (Input.GetKeyDown(KeyCode.X) && usingSkill == false) // left side teleport
+        if (Input.GetKeyDown(KeyCode.W) && usingSkill == false
+                                        && _playerController.faceRight == false) // left side teleport
         {
-            Skill1Left();   
+            Skill1Left();
         }
-        if (Input.GetKeyDown(KeyCode.C) && usingSkill == false) // right side teleport
+        if (Input.GetKeyDown(KeyCode.W) && usingSkill == false 
+                                        && _playerController.faceRight == true) // right side teleport
         {
             Skill1Right();
+        }
+        
+        // Skill 2
+        if (Input.GetKeyDown(KeyCode.E) && usingSkill == false)
+        {
+            Skill2();
         }
     }
 
@@ -54,31 +60,21 @@ public class Skills : MonoBehaviour
     
     void Skill()
     {
-        _playerController.FlipExamination(); // examination to flip
-        transform.localScale = _resizeSize;
-        _playerController.FlipExamination(); // examination to flip
+        _playerController.ReSize(true);
+        
         _gun.ammoMinus(-minusAmmoValue);
-        Instantiate(skillEffect, transform.position, transform.rotation); 
-        // Instantiate effect
-        if (_playerController._moveInput == 0)
-        {
-            _playerController.Flip();
-        }
-        _playerController.FlipExamination(); // examination to flip
+        Instantiate(skillEffect, transform.position, transform.rotation); // Instantiate effect
         StartCoroutine(ResetSize(waitTime));
-        _playerController.FlipExamination(); // examination to flip
     }
 
     IEnumerator ResetSize(float secs)
     {
-        _playerController.FlipExamination(); // examination to flip
         usingSkill = true;
         yield return new WaitForSeconds(secs);
-        Instantiate(skillEffect, transform.position, transform.rotation); 
-        // Instantiate effect
-        transform.localScale = _originalSize;
-        _playerController.FlipExamination(); // examination to flip
-
+        Instantiate(skillEffect, transform.position, transform.rotation); // Instantiate effect
+        
+        _playerController.ReSize(false);
+        
     }
     
     #endregion
@@ -88,22 +84,36 @@ public class Skills : MonoBehaviour
     void Skill1Left()
     {
         _gun.ammoMinus(-minusAmmoValue);
-        Instantiate(skill1Effect, transform.position, transform.rotation);
-        // Instantiate effect
+        Instantiate(skill1Effect, transform.position, transform.rotation); // Instantiate effect
         _playerController.rb.AddForce(transform.right * -forceToMove);
-        Instantiate(skill1Effect, transform.position, transform.rotation);
-        // Instantiate effect
+        Instantiate(skill1Effect, transform.position, transform.rotation); // Instantiate effect
         usingSkill = true;
     }
     void Skill1Right()
     {
         _gun.ammoMinus(-minusAmmoValue);
-        Instantiate(skill1Effect, transform.position, transform.rotation); 
-        // Instantiate effect
+        Instantiate(skill1Effect, transform.position, transform.rotation); // Instantiate effect
         _playerController.rb.AddForce(transform.right * forceToMove);
-        Instantiate(skill1Effect, transform.position, transform.rotation); 
-        // Instantiate effect
+        Instantiate(skill1Effect, transform.position, transform.rotation); // Instantiate effect
         usingSkill = true;
+    }
+
+    #endregion
+
+    #region Skill2
+
+    void Skill2()
+    {
+        _gun.ammoMinus(-minusAmmoValue);
+        usingSkill = true;
+        _playerController.rb.gravityScale /= 2;
+        StartCoroutine(ResetGravityScale(7f));
+    }
+
+    IEnumerator ResetGravityScale(float secs)
+    {
+        yield return new WaitForSeconds(secs);
+        _playerController.rb.gravityScale *= 2;
     }
 
     #endregion

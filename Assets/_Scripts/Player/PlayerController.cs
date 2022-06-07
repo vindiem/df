@@ -129,23 +129,31 @@ public class PlayerController : MonoBehaviour
         transform.localScale = Scaler;
     }
 
-    public void FlipExamination()
+    // Skill
+    public void ReSize(bool isUse)
     {
-        if (faceRight == false && _moveInput > 0)
+        if (isUse == true)
         {
-            Flip();
+            Vector3 Scale = transform.localScale;
+            Scale /= 2;
+            transform.localScale = Scale;
         }
-        else if (faceRight == true && _moveInput < 0)
+        else if (isUse == false)
         {
-            Flip();
+            Vector3 Scale = transform.localScale;
+            Scale *= 2;
+            transform.localScale = Scale;
         }
         
-        // one more examination
-        if (transform.localScale.x == -1 && _moveInput > 0)
+    }
+
+    public void FlipExamination()
+    {
+        if ((faceRight == false && _moveInput > 0))
         {
             Flip();
         }
-        else if (transform.localScale.x == 1 && _moveInput < 0)
+        else if ((faceRight == true && _moveInput < 0))
         {
             Flip();
         }
@@ -227,4 +235,5 @@ public class PlayerController : MonoBehaviour
             PlayerPrefs.SetInt("levels", currentLevel + 1);
         }
     }
+    
 }

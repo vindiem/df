@@ -2653,7 +2653,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BackGroundColor: {r: 0.4440726, g: 0.7924528, b: 0.6569554, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -4557,6 +4557,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 100
   _speed: 8
+  _moveInput: 0
+  rb: {fileID: 0}
   faceRight: 1
   jumpEffect: {fileID: 8443315704496310908, guid: da50c93a84cb15b4c993f0ebc78b671b, type: 3}
   ground:

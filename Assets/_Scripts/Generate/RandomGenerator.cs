@@ -13,14 +13,13 @@ public class RandomGenerator : MonoBehaviour
     
     private void Start()
     {
-        StartCoroutine(tileSetRandomInstantiate());
+        tileSetRandomInstantiate();
     }
 
-    private IEnumerator tileSetRandomInstantiate()
+    private void tileSetRandomInstantiate()
     {
         int randomTiles = Random.Range(0, tileSet.Length);
         Instantiate(tileSet[randomTiles], transform.position, Quaternion.identity);
-        yield return new WaitForSeconds(0.5f);
     }
 
     private void OnDrawGizmosSelected()
