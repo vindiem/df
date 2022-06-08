@@ -56,6 +56,7 @@
      <Compile Include="Assets\_Scripts\Gun\bullet.cs" />
      <Compile Include="Assets\_Scripts\Gun\Gun.cs" />
      <Compile Include="Assets\_Scripts\menu\Timer.cs" />
+     <Compile Include="Assets\_Scripts\Generate\VecrticalGizmosDraw.cs" />
      <Compile Include="Assets\_Scripts\Enemy\Enemy.cs" />
      <Compile Include="Assets\_Scripts\Setting\Resolution.cs" />
      <Compile Include="Assets\_Scripts\Setting\Quality.cs" />

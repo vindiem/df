@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -189,6 +190,7 @@ public class PlayerController : MonoBehaviour
         {
             UnLockLevel();
             SceneTransition.SwitchToScene("Menu");
+            Destroy(gameObject, 0.2f);
         }
 
         else if (collision.CompareTag("damageTrigger"))

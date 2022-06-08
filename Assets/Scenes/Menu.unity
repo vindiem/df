@@ -1911,7 +1911,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 6
+  m_Text: 6 horizon
 --- !u!222 &587762008
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2404,32 +2404,23 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2868b3339efe51149b458f01218b5526, type: 3}
-    m_FontSize: 70
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 7
-    m_MaxSize: 70
+    m_MinSize: 5
+    m_MaxSize: 300
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'A, D - movement
-
-    SPACE - jump
-
-    Left click - shooting
-
-    "q"
-    - use first skill beginning with three level (small size)
-
-    "e" - use second
-    skill beginning with three level (teleport)
-
-
-    beginning with four level -
-    random level renegation(you can re generate level in pause --> restart)'
+  m_Text: "A, D - movement\nSPACE - jump\nLeft click - shooting\n-------------------skills-------------------\n\"q\"
+    - use first skill beginning with three level\n\"w\" - use second skill beginning
+    with three level\n\"e\" - use third skill beginning with three level\n--------------------map--------------------\nto
+    open the full map of the area you need to click on the middle mouse button (you
+    can open it starting from the third level)\n\nbeginning with four level - random
+    level generation (you can regenerate level in \npause --> restart)\n"
 --- !u!222 &698838131
 CanvasRenderer:
   m_ObjectHideFlags: 0

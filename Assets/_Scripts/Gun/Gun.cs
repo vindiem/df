@@ -15,17 +15,24 @@ public class Gun : MonoBehaviour
     public AudioSource shotSound;
 
     // ammo
-    [HideInInspector] public float ammo = 20f;
+    [HideInInspector] public int ammo = 20;
+    [HideInInspector] public int maxAmmo = 20;
 
     // ammo show()
     public Image ammoBar;
-    [HideInInspector] public float maxAmmo = 20f;
 
     private void Update()
     {
+        // Limit of ammo set
+        if (ammo > maxAmmo)
+        {
+            ammo--;
+        }
+        
         // ammo instantiate
-        ammoBar.fillAmount = ammo / maxAmmo;
+        ammoBar.fillAmount = (float)ammo / (float)maxAmmo;
 
+        // rotate gun
         Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0f, 0f, rotZ + offset);
@@ -34,15 +41,16 @@ public class Gun : MonoBehaviour
         {
             if (Input.GetMouseButton(0) && ammo > 0)
             {
-                ammo--;
+                ammoChange(-1);
                 shotSound.Play();
                 Instantiate(bullet, shotPoint.position, transform.rotation);
                 timeBtwShots = startTimeBtwShots;
             }
 
-            else if (Input.GetKeyDown(KeyCode.R) || ammo <= 0)
+            // reload
+            if (Input.GetKeyDown(KeyCode.R) && ammo <= 5)
             {
-                StartCoroutine(WaitAnimTimeSecs(2.5f));
+                StartCoroutine(WaitAnimTimeSecs(.35f));
             }
         }
 
@@ -52,14 +60,18 @@ public class Gun : MonoBehaviour
         }
     }
 
-    public void ammoMinus(int value)
+    public void ammoChange(int value) // 2 usage in this script
     {
         ammo += value;
     }
 
     IEnumerator WaitAnimTimeSecs(float secs)
     {
-        yield return new WaitForSeconds(secs);
-        ammo = maxAmmo;
+        for (int i = ammo; i <= maxAmmo; i++)
+        {
+            ammoChange(1);
+            yield return new WaitForSeconds(secs);
+        }
+        
     }
 }

@@ -1625,7 +1625,6 @@ GameObject:
   - component: {fileID: 2198052224615035448}
   - component: {fileID: 2198052224615035449}
   - component: {fileID: 2198052224615035451}
-  - component: {fileID: 2198052224615035450}
   m_Layer: 0
   m_Name: gun
   m_TagString: Untagged
@@ -1716,26 +1715,9 @@ MonoBehaviour:
   shotPoint: {fileID: 2198052224702737129}
   startTimeBtwShots: 0.4
   shotSound: {fileID: 8815521356234743297}
+  ammo: 20
   ammoBar: {fileID: 2198052224552374353}
---- !u!95 &2198052224615035450
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2198052224615035447}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e6f15731ba2e47a4eb7646ce52471e63, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  maxAmmo: 20
 --- !u!1 &2198052224638658523
 GameObject:
   m_ObjectHideFlags: 0
@@ -2758,10 +2740,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 100
   _speed: 8
+  _moveInput: 0
+  rb: {fileID: 0}
+  faceRight: 1
+  jumpEffect: {fileID: 0}
   ground:
     serializedVersion: 2
     m_Bits: 3072
   feetPos: {fileID: 2198052225196444800}
+  isGrounded: 0
   healthBar: {fileID: 2198052223576993281}
 --- !u!95 &2198052225345675835
 Animator:
