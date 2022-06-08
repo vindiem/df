@@ -48,7 +48,7 @@ public class Gun : MonoBehaviour
             }
 
             // reload
-            if (Input.GetKeyDown(KeyCode.R) && ammo <= 5)
+            if (Input.GetKeyDown(KeyCode.R) && ammo <= 10)
             {
                 StartCoroutine(WaitAnimTimeSecs(.35f));
             }
