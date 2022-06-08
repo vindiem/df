@@ -11,9 +11,6 @@ public class Skills : MonoBehaviour
         CDSkill1 = false,
         CDSkill2 = false;
 
-    private Vector3 _originalSize = new Vector3((float)1, (float)1, (float)1);
-    private Vector3 _resizeSize = new Vector3((float)0.5, (float)0.5, (float)0.5);
-
     public float forceToMove; // for Skills
 
     public int minusAmmoValue;
@@ -22,10 +19,12 @@ public class Skills : MonoBehaviour
     public ParticleSystem skillEffect;
     public ParticleSystem skill1Effect;
 
-    [Header("Mini Map & Full Map")] public GameObject MiniMap;
+    [Header("Mini Map & Full Map")] 
+    public GameObject MiniMap;
     public GameObject FullMap;
 
-    [Header("Skills Images")] public Image[] SkillsImages;
+    [Header("Skills Images")] 
+    public Image[] SkillsImages;
 
     private void Start()
     {

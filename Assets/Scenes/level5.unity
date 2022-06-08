@@ -8817,8 +8817,8 @@ MonoBehaviour:
   startTimeBtwShots: 0.4
   shotSound: {fileID: 1976669128}
   ammo: 20
-  ammoBar: {fileID: 686346324}
   maxAmmo: 20
+  ammoBar: {fileID: 686346324}
 --- !u!212 &1574080798
 SpriteRenderer:
   m_ObjectHideFlags: 0
