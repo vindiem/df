@@ -109,7 +109,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 857228212620019581, guid: 3df8b915512d10a43bd5a8edb73f5e77, type: 3}
       propertyPath: angryDistance
-      value: 4
+      value: 4.2
       objectReference: {fileID: 0}
     - target: {fileID: 857228212979755137, guid: 3df8b915512d10a43bd5a8edb73f5e77, type: 3}
       propertyPath: m_RootOrder

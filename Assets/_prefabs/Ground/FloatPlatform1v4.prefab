@@ -157,7 +157,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4589411489043936982, guid: 4c32e53200d1d8642a4704719f9925af, type: 3}
       propertyPath: angryDistance
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c32e53200d1d8642a4704719f9925af, type: 3}

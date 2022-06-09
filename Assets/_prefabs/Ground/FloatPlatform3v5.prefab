@@ -110,7 +110,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 857228212620019581, guid: 3df8b915512d10a43bd5a8edb73f5e77, type: 3}
       propertyPath: angryDistance
-      value: 2.4
+      value: 2.65
       objectReference: {fileID: 0}
     - target: {fileID: 857228212979755137, guid: 3df8b915512d10a43bd5a8edb73f5e77, type: 3}
       propertyPath: m_RootOrder
@@ -224,7 +224,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4589411489043936982, guid: 4c32e53200d1d8642a4704719f9925af, type: 3}
       propertyPath: angryDistance
-      value: 2.4
+      value: 2.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c32e53200d1d8642a4704719f9925af, type: 3}
