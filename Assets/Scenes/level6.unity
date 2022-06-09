@@ -4151,6 +4151,7 @@ MonoBehaviour:
   - {fileID: 313671869}
   - {fileID: 892513423}
   - {fileID: 739265523}
+  platform: {fileID: 6318725355799900362, guid: fc9a16314972de24fb0049eaf5648d4b, type: 3}
 --- !u!1 &1224584658
 GameObject:
   m_ObjectHideFlags: 0

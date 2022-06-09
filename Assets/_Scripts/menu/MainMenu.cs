@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public GameObject Q;
-    public GameObject Q1;
     public GameObject Options;
     public GameObject Level;
     public GameObject con;
@@ -15,7 +14,6 @@ public class MainMenu : MonoBehaviour
     private void Start()
     {
         Q.SetActive(false);
-        Q1.SetActive(false);
         Options.SetActive(false);
         Level.SetActive(false);
         con.SetActive(false);
@@ -50,19 +48,9 @@ public class MainMenu : MonoBehaviour
         Q.SetActive(true);
     }
 
-    public void Q1Button()
-    {
-        Q1.SetActive(true);
-    }
-
     public void QBackButton()
     {
         Q.SetActive(false);
-    }
-
-    public void Q1BackButton()
-    {
-        Q1.SetActive(false);
     }
 
     public void levelChangeBackButton()

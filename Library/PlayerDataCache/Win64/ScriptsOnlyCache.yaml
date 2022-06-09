@@ -1953,7 +1953,7 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
-      Hash: 409ab52a3722a3144d6a7ddf77b6c935
+      Hash: c08018de52825af79ba1d103837e06d7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MainMenu

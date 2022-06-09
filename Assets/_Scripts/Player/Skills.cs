@@ -1,4 +1,5 @@
 using System.Collections;
+using Cinemachine.Utility;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -25,6 +26,8 @@ public class Skills : MonoBehaviour
 
     [Header("Skills Images")] 
     public Image[] SkillsImages;
+
+    // public GameObject platform;
 
     private void Start()
     {
@@ -56,30 +59,34 @@ public class Skills : MonoBehaviour
             }
         }
 
-        // SKill
-        if (Input.GetKeyDown(KeyCode.Q) && CDSkill == false)
+        if (_gun.ammo >= 10)
         {
-            Skill();
+            // SKill
+            if (Input.GetKeyDown(KeyCode.Q) && CDSkill == false)
+            {
+                Skill();
+            }
+
+            // Skill 1
+            if (Input.GetKeyDown(KeyCode.W) && CDSkill1 == false
+                                            && _playerController.faceRight == false) // left side teleport
+            {
+                Skill1Left();
+            }
+
+            if (Input.GetKeyDown(KeyCode.W) && CDSkill1 == false
+                                            && _playerController.faceRight == true) // right side teleport
+            {
+                Skill1Right();
+            }
+
+            // Skill 2
+            if (Input.GetKeyDown(KeyCode.E) && CDSkill2 == false)
+            {
+                Skill2();
+            }
         }
 
-        // Skill 1
-        if (Input.GetKeyDown(KeyCode.W) && CDSkill1 == false
-                                        && _playerController.faceRight == false) // left side teleport
-        {
-            Skill1Left();
-        }
-
-        if (Input.GetKeyDown(KeyCode.W) && CDSkill1 == false
-                                        && _playerController.faceRight == true) // right side teleport
-        {
-            Skill1Right();
-        }
-
-        // Skill 2
-        if (Input.GetKeyDown(KeyCode.E) && CDSkill2 == false)
-        {
-            Skill2();
-        }
     }
 
     #region Skill
@@ -146,6 +153,19 @@ public class Skills : MonoBehaviour
     }
 
     #endregion
+
+    
+    /*#region Skill3
+
+    // Skill3
+    void Skill3()
+    {
+        Vector3 mousePoistion = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePoistion.z += 10;
+        Instantiate(platform, mousePoistion, transform.rotation);
+    }
+
+    #endregion*/
 
     #region Skill Coul Down Reset
 
