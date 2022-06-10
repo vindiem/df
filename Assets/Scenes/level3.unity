@@ -749,8 +749,8 @@ MonoBehaviour:
   startTimeBtwShots: 0.4
   shotSound: {fileID: 7266005140537745761}
   ammo: 20
-  ammoBar: {fileID: 1955565604}
   maxAmmo: 20
+  ammoBar: {fileID: 1955565604}
 --- !u!1 &295900702
 GameObject:
   m_ObjectHideFlags: 0
@@ -1262,7 +1262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: bf89911a3e62d6948bde4552eba804a0, type: 2}
+  sharedProfile: {fileID: 11400000, guid: b3f0bda9ee5743b4d9d3276834caa21c, type: 2}
   isGlobal: 1
   blendDistance: 0
   weight: 1

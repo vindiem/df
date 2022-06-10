@@ -25,7 +25,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 109
+  controlID: 21
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -180,9 +180,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 23.001032, y: 2.4466295, z: -103.32803}
+    m_Target: {x: -8.198194, y: 23.792988, z: -136.18796}
     speed: 2
-    m_Value: {x: 23.001032, y: 2.4466295, z: -103.32803}
+    m_Value: {x: -8.198194, y: 23.792988, z: -136.18796}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -233,9 +233,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 40.57297
+    m_Target: 53.919167
     speed: 2
-    m_Value: 40.57297
+    m_Value: 53.919167
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -404,7 +404,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 62
+  controlID: 46
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -424,8 +424,8 @@ MonoBehaviour:
     y: 0
     width: 434
     height: 317
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 9}
   m_Panes:
   - {fileID: 9}
@@ -461,7 +461,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 9af1ffffb4f1ffff7af3ffffc6f3ffff24f4ffff7af4ffff4af6ffffe0f6ffff5af7ffff5ef7ffff36fbffff
+      m_ExpandedIDs: c2f4ffff14f9ffff3cfaffff36fbffff90540000ec540000ae6d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -549,22 +549,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scenes/post
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scenes/post
   m_LastFoldersGridSize: 96
-  m_LastProjectPath: D:\Work()\_git\dark-forest
+  m_LastProjectPath: D:\Work()\_git\df
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 024a0000
-    m_LastClickedID: 18946
-    m_ExpandedIDs: 00000000fa490000fc490000fe490000004a0000024a0000044a0000064a000000ca9a3b
+    m_SelectedIDs: 904b0000
+    m_LastClickedID: 19344
+    m_ExpandedIDs: 00000000664b0000684b00006a4b00006e4b0000704b0000724b0000744b0000764b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -592,7 +592,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000fa490000fc490000fe490000004a0000024a0000044a0000064a0000
+    m_ExpandedIDs: 00000000664b0000684b00006a4b00006c4b00006e4b0000704b0000724b0000744b0000764b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -617,9 +617,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: ae6e0000
+    m_LastClickedInstanceID: 28334
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: ee540000da500000844900009447000060490000ae4a000000000000f4480000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -644,7 +644,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 259.8}
+    m_ScrollPosition: {x: 0, y: 79}
     m_GridSize: 96
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 172
@@ -667,8 +667,8 @@ MonoBehaviour:
     y: 0
     width: 370
     height: 771
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -707,8 +707,8 @@ MonoBehaviour:
     m_CachedPref: -160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastInspectedObjectInstanceID: 28334
+  m_LastVerticalScrollValue: 295.20007
   m_GlobalObjectId: 
   m_LockTracker:
     m_IsLocked: 0
@@ -733,9 +733,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1138.4
+    x: 1166.4
     y: 73.6
-    width: 397
+    width: 369
     height: 750
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &15
