@@ -219,8 +219,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2a05ec307450ec49928c99b26e0a4e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
-  speed: 500
+  damage: 18
+  speed: 450
   health: 100
   angryDistance: 6
   startPosition: {fileID: 4589411488346356606}

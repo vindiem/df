@@ -6,7 +6,6 @@ using UnityEngine.AI;
 public class Enemy : MonoBehaviour
 {
     // fields
-    public int damage = 24;
     public float speed;
     public int health = 100;
     Rigidbody2D rb;

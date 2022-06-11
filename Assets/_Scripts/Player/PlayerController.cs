@@ -202,7 +202,7 @@ public class PlayerController : MonoBehaviour
 
         else if (collision.CompareTag("spike"))
         {
-            ChangeHealth(-17);
+            ChangeHealth(-16);
             _jumpForce -= 5;
         }
 
