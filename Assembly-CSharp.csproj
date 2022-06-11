@@ -66,8 +66,9 @@
      <Compile Include="Assets\_Scripts\menu\MainMenu.cs" />
      <Compile Include="Assets\_Scripts\menu\Pause.cs" />
      <Compile Include="Assets\_Scripts\Scene Transition\SceneTransition.cs" />
-     <Compile Include="Assets\_Scripts\Player\PlayerController.cs" />
      <Compile Include="Assets\_Scripts\Generate\GizmosFrameDraw.cs" />
+     <Compile Include="Assets\_Scripts\Player\PlayerController.cs" />
+     <Compile Include="Assets\_Scripts\Map\ColorRainbow.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

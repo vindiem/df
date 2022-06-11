@@ -27,7 +27,7 @@ public class Skills : MonoBehaviour
     [Header("Skills Images")] 
     public Image[] SkillsImages;
 
-    // public GameObject platform;
+    // public GameObject platform;/**/
 
     private void Start()
     {
@@ -191,7 +191,7 @@ public class Skills : MonoBehaviour
 
         // _gun.ammoChange(-minusAmmoValue);
         _gun.ammoChange(-minusAmmoValue);
-        SkillsImages[numberOfArray].color = new Color32(255, 100, 100, 100);
+        SkillsImages[numberOfArray].color = new Color32(255, 100, 100, 128);
         yield return new WaitForSeconds(secs);
         SkillsImages[numberOfArray].color = new Color32(100, 245, 255, 255);
 
