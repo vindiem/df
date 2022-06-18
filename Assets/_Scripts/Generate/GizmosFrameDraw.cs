@@ -10,7 +10,8 @@ public class GizmosFrameDraw : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green; 
-        Gizmos.DrawWireCube(transform.position, new Vector3(135f, 65f, 0f));
+        Gizmos.DrawWireCube(transform.position, new Vector3(150f, 80f, 0f));
+        
     }
 #endif    
     

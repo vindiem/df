@@ -35,8 +35,7 @@ public class PlayerController : MonoBehaviour
     // hp show()
     public Image healthBar;
     float maxHp = 100f;
-    
-    
+
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -50,7 +49,7 @@ public class PlayerController : MonoBehaviour
         _moveInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(_moveInput * _speed, rb.velocity.y);
 
-        #region Flip
+        #region FlipExamination
         // flip body
         FlipExamination();
         #endregion
@@ -140,6 +139,7 @@ public class PlayerController : MonoBehaviour
             Scale /= 2;
             transform.localScale = Scale;
         }
+        
         else if (isUse == false)
         {
             Vector3 Scale = transform.localScale;

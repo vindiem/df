@@ -23,7 +23,7 @@ public class RandomGenerator : MonoBehaviour
     }
 
     // Horizontal Gizmos Draw
-    private void OnDrawGizmosSelected()
+    private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
         Gizmos.DrawWireCube(transform.position, areaCube);

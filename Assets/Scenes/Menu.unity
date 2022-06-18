@@ -8333,17 +8333,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Using any skill, 50% of all mana is taken from you. (For one mana charge,
-    you can use 2 skills, but be careful because you can be left without mana).
-
-    Shooting
-    from a magical weapon takes 5% of all mana from you in one shot.
-
-
-
-    Skills
-    are available in the game starting from level 3, by that time on the previous
-    2 levels you should have mastered double Jump well.'
+  m_Text: Also in the game there is a mini map which is displayed starting from level
+    4 in the lower left corner. When you click on the mouse wheel, this map will
+    increase in size and become more detailed. On this map you will be able to lay
+    the shortest path to the portal.
 --- !u!222 &1327294772
 CanvasRenderer:
   m_ObjectHideFlags: 0
