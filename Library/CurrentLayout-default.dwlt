@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 1536
     height: 820.8
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Scene
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 821
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -102,7 +102,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 133
+  controlID: 39
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -374,9 +374,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: e84a0000
-    m_LastClickedID: 19176
-    m_ExpandedIDs: 00000000c84a0000ca4a0000cc4a0000ce4a0000d04a0000e04a000000ca9a3b
+    m_SelectedIDs: 364b0000
+    m_LastClickedID: 19254
+    m_ExpandedIDs: 00000000144b0000164b0000184b00001a4b00001c4b00001e4b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -404,7 +404,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c84a0000ca4a0000cc4a0000ce4a0000d04a0000
+    m_ExpandedIDs: 00000000144b0000164b0000184b00001a4b00001c4b00001e4b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -431,7 +431,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000b84c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -491,7 +491,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 731, y: 411}
+  m_TargetSize: {x: 913.75, y: 514}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -508,8 +508,8 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
     m_HBaseRangeMin: -365.5
     m_HBaseRangeMax: 365.5
-    m_VBaseRangeMin: -205.5
-    m_VBaseRangeMax: 205.5
+    m_VBaseRangeMin: -205.6
+    m_VBaseRangeMax: 205.6
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -526,11 +526,11 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 0
+      y: 21
       width: 731
-      height: 750
+      height: 729
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 365.5, y: 375}
+    m_Translation: {x: 365.5, y: 364.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -538,12 +538,12 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -365.5
-      y: -375
+      y: -364.5
       width: 731
-      height: 750
+      height: 729
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 731, y: 750}
+  m_LastWindowPixelSize: {x: 913.75, y: 937.5}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000000000000000000
@@ -587,7 +587,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: 379.2558, y: 248.22887, z: -480.29147}
     speed: 2
-    m_Value: {x: 376.1207, y: 251.93173, z: -478.49237}
+    m_Value: {x: 379.2558, y: 248.22887, z: -480.29147}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -640,7 +640,7 @@ MonoBehaviour:
   m_Size:
     m_Target: 477.26196
     speed: 2
-    m_Value: 499.75073
+    m_Value: 477.26196
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -695,7 +695,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 4c98ffff6698ffffb09affff949bffff869cffffc49dffffa89efffff49effff4c9fffffa09fffff70a1ffff06a2ffff68a2ffff6ca2ffff22a4ffffeea6ffff10abffff1ef5ffff36fbffff6e5b0000065c000052760000ea760000
+      m_ExpandedIDs: 9ae5ffffb6e5ffffe6e6ffffcae7ffffbce8fffffae9ffffdeeaffff2aebffff82ebffffd6ebffffa6edffff3ceeffff9ceeffffa0eeffff6cefffff88efffffd2f1ffffb6f2ffffa8f3ffffeaf4ffffcef5ffff1af6ffff78f6ffffcef6ffff9ef8ffff34f9ffffaef9ffffb2f9ffff36fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

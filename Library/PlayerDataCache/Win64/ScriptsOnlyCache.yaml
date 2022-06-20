@@ -32,7 +32,6 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
-    - UnityEditor.Tilemaps.GridBrushEditor
     - UnityEditor.Tilemaps.GridPaintPaletteClipboard
     - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
@@ -2786,4 +2785,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/level8.unity
   - Assets/Scenes/level9.unity
   - Assets/Scenes/level10.unity
-  playerPath: C:/Users/kvmssjbg/Desktop/MyGames/Build/dark forest.exe
+  playerPath: C:/Users/kvmssjbg/Desktop/MyGames/FalcoBuild/Distr/DarkJungle.exe
